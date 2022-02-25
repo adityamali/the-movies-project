@@ -4,14 +4,15 @@
 
 :root{
     --primary-color: #000000;
-    --secondary-color: rgb(31, 31, 31);
-    --highlight-color: rgb(14, 100, 212);
+    --secondary-color: #1f1f1f;
+    --highlight-color: rgb(32, 109, 211);
 }
 
-body{
+#body{
     background: var(--primary-color);
     font-family: 'Poppins', sans-serif;
     margin: 0;
+    overflow-x: hidden;
     
 }
 
@@ -81,7 +82,6 @@ ul li{
 
 ul li:hover{
     color: var(--highlight-color);
-    font-weight: bold;
 }
 
 main{
@@ -110,11 +110,12 @@ main{
 
 .movie img{
     width: 100%;
+    height: 100%;
 }
 
 .movie-info{
     /* color: var(--highlight-color); */
-    background: linear-gradient(transparent 10%, #2424247a 40%,  #000000);
+    background: linear-gradient(transparent 10%, #2424247a 40%,  #000000af);
     position: absolute;
     bottom: 0;
     color: #e8e8e8;
@@ -128,11 +129,12 @@ main{
 
 .movie-info h5{
     margin-top: 0;
+    margin-bottom: 5px;
     vertical-align: baseline;
 }
 
 .movie-info span{
-    background-color: var(--primary-color);
+    background: var(--primary-color);
     position: absolute;
     right: 0;
     padding: 0.25rem 0.5rem;
@@ -142,7 +144,7 @@ main{
 }
 
 .movie-info span.green{
-    color: lightgreen;
+    color: rgb(25, 139, 25);
 }
 
 .movie-info span.orange{
@@ -170,4 +172,26 @@ main{
 
 .movie:hover .overview{
     opacity: 90%;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    width: 100vw;
+    margin-top: 5rem;
+    color: #e8e8e8;
+    padding: 0.6em;
+}
+
+a{
+    text-decoration: none;
+    color: #e8e8e8;
+}
+
+
+@media screen and (max-width: 850px) {
+    .movie{
+        width: 300px;
+    }
 }

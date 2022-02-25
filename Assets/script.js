@@ -23,7 +23,7 @@ function getMovies(url) {
         <img src="${imgURL + data.results[i].backdrop_path}" alt="${data.results[i].original_title}">
         <div class="movie-info">
             <h5>${data.results[i].original_title}</h5>
-            <span class="${getColor(data.results[i].vote_average)}">${data.results[i].vote_average}</span>
+            <span id = "ratebg" class="${getColor(data.results[i].vote_average)}">${data.results[i].vote_average}</span>
         </div>
         <div class="overview">
             ${data.results[i].overview}
