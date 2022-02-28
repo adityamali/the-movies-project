@@ -43,7 +43,7 @@ header{
     right: 0;
     background-color: transparent;
     border: 2px solid var(--primary-color);
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 1rem;
     margin: 1rem 1rem;;
     border-radius: 3px;
     font-size: 1rem;
@@ -82,6 +82,31 @@ ul li{
 
 ul li:hover{
     color: var(--highlight-color);
+}
+
+h3{
+    position: relative;
+    color: #e8e8e8;
+    left: 20px;
+    float: left;
+}
+
+/* .xscroll{
+    overflow-x: scroll;
+    height: max-content;
+}
+
+#flex{
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+} */
+
+.card{
+    height: 300px;
+    width: 500px;
+    background: #e8e8e8;
+    margin: 1rem;
 }
 
 main{
@@ -168,6 +193,7 @@ main{
     transition: 400ms ease-in-out;
     font-size: 12px;
     opacity: 0;
+    overflow-y: auto;
 }
 
 .movie:hover .overview{
