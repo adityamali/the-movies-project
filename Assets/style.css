@@ -35,6 +35,7 @@ header{
     top: 0;
     left: 0;
     color: var(--highlight-color);
+    cursor: pointer;
 }
 
 .search{
@@ -78,10 +79,11 @@ ul li{
     vertical-align: middle;
     padding: 0.25rem 1rem;
     text-align: justify;
+    cursor: pointer;
 }
 
 ul li:hover{
-    color: var(--highlight-color);
+    /* color: var(--highlight-color); */
     background: var(--primary-color);
     border-radius: 10px;
 }
@@ -201,6 +203,26 @@ main{
 
 .movie:hover .overview{
     opacity: 90%;
+}
+
+.movie:hover .add{
+    opacity: 100%;
+    cursor:  pointer;
+}
+
+.add{
+    opacity: 0;
+    background-color: #e8e8e869;
+    color: #000000;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 5px;
+    padding: 0.3em 1em;
+}
+
+.add:active{
+    background-color: #bbbbbb;
 }
 
 footer{

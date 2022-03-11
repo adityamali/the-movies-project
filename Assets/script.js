@@ -32,6 +32,9 @@ function getMovies(url) {
         <div class="overview">
             ${data.results[i].overview}
         </div>
+        <div class="add">
+            +
+        </div>
         `
             main.appendChild(movieEl);
         }
