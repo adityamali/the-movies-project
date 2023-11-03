@@ -9,7 +9,7 @@ const form = document.getElementById('form');
 const search = document.getElementById('search')
 
 
-getMovies(apiURL);
+getMovies(apiURL, imgURL);
 
 
 form.addEventListener('submit', (e) => {

@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#1f1f1f">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./../style.css">
     <title>The Movies Project</title>
 </head>
 
-<body>
+<body id="login-body">
 
     <header>
         <div class="brand">
@@ -20,7 +20,7 @@
             <ul id="pages">
                 <li>Home</li>
                 <li>Watchlist</li>
-                <li>About</li>
+                <li onclick="location.href = './../index.html';">About</li>
                 <li id="login-link" onclick="location.href = './pages/login.html';">Login</li>
             </ul>
         </div>
@@ -30,19 +30,22 @@
         </form>
     </header>
 
-    <main id="main">
-        <h3 id="popular-today">Popular today</h3>
-        <!-- <div class="xscroll">
-            <div id="flex">
-            </div>
-        </div>  -->
+    <main>
+        //create a user login form
+
+        <form id="login-form" action="submit">
+            <h3>Login</h3>
+            <input class="input-file" type="email" placeholder="Username" id="username" class="username">
+            <input class="input-file" type="password" placeholder="Password" id="password" class="password">
+            <button id="login" class="login" onclick="">Login</button>
+        </form>
     </main>
 
     <footer>
         built by &nbsp; <a href="https://adityamali.ml">Aditya Mali</a> &nbsp; using HTML, CSS & JS.
     </footer>
 
-    <script src="main.js"></script>
+    <script src="./../main.js"></script>
 </body>
 
 </html>

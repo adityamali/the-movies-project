@@ -1,4 +1,4 @@
-export function getMovies(url) {
+export function getMovies(url, imgURL) {
 
     fetch(url).then(res => res.json()).then(data => {
         console.log(data.results);
