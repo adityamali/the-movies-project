@@ -19,12 +19,12 @@ body {
 header {
     position: sticky;
     top: 0;
-    padding: 1rem;
+    padding: 1em;
     display: flex;
     background-color: var(--secondary-color);
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: math(100vw - 2em);
     height: 40px;
     z-index: 2;
 }
